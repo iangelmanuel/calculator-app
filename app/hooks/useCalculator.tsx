@@ -22,7 +22,7 @@ export const useCalculator = () => {
     } else {
       setFormula(number)
     }
-  }, [formula, number])
+  }, [number])
 
   useEffect(() => {
     const subResult = calculateSubResult()
@@ -59,8 +59,8 @@ export const useCalculator = () => {
   }
 
   const calculateResult = () => {
-    const results = calculateSubResult()
-    setFormula(results.toString())
+    const result = calculateSubResult()
+    setFormula(result.toString())
     lastOperation.current = undefined
     setPrevNumber("0")
   }

@@ -17,7 +17,7 @@ export default function CalculatorApp() {
     multiplyOperation,
     subtractOperation,
     addOperation,
-    // calculateSubResult,
+    calculateSubResult,
     calculateResult
   } = useCalculator()
 
